@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context="com.example.shivanshu.driveeasy.FirstActivity"
+    android:background="@drawable/download">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/hackathonlogo"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:text="Government of Rajasthan "
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_design"
+            android:text="General Public"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_margin="8dp"
+            android:onClick="onPublicClick"
+            />
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_design"
+            android:text="Verification Authority"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:onClick="onAuthorityClick"
+            android:layout_margin="8dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Rajasthan Government"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+</RelativeLayout>
