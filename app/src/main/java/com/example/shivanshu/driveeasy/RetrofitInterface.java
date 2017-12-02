@@ -17,5 +17,7 @@ public interface RetrofitInterface {
 
     @GET("questions")
     public Call<BlogDetailsModalClass> getPoliceIdList(@Query("police_id") String  s);
+    @GET("questions")
+    public Call<AadharDetailClass> getAadharDetails(@Query("aadhar_number") String s);
 }
 

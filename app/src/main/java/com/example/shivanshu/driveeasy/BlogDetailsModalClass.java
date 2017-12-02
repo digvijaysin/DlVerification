@@ -53,4 +53,11 @@ class BlogDetailsModalClass {
     public DlDetails getDlDetails() {
         return dlDetails;
     }
+    @Expose
+    @SerializedName("status")
+    String Status;
+
+    public String getStatus() {
+        return Status;
+    }
 }

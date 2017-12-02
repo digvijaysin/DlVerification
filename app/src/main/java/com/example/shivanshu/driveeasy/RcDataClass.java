@@ -60,5 +60,12 @@ class RcDataClass {
     public RcDetails getRcDetails() {
         return RcDetails;
     }
+    @Expose
+    @SerializedName("status")
+    String Status;
+
+    public String getStatus() {
+        return Status;
+    }
 
 }

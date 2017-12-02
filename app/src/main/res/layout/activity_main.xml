@@ -21,6 +21,7 @@
 <android.support.v7.widget.CardView
     app:cardBackgroundColor="#f9f7f5"
     android:id="@+id/card_view"
+    android:visibility="visible"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="5dp"
@@ -105,6 +106,7 @@ android:id="@+id/submit"
     </LinearLayout>
 </android.support.v7.widget.CardView>
     <LinearLayout
+
         android:id="@+id/_progress_war"
         android:visibility="gone"
         android:layout_width="match_parent"
@@ -133,7 +135,7 @@ android:id="@+id/submit"
 <TextView
     android:layout_gravity="bottom"
     android:layout_width="fill_parent"
-    android:layout_height="100dp"
+    android:layout_height="200dp"
 
     android:textSize="20sp"
     android:gravity="center"

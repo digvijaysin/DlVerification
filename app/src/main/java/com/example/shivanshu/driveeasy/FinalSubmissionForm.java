@@ -95,7 +95,27 @@ public class FinalSubmissionForm {
         return RcExpiry;
     }
 
+    public String getRcNumber() {
+        return RcNumber;
+    }
+
+    public String getVehicalNo() {
+        return vehicalNo;
+    }
+
+    public String getValidity() {
+        return Validity;
+    }
+
+    public String getIssueDate() {
+        return IssueDate;
+    }
+
     public String getRcIssueDate() {
         return RcIssueDate;
+    }
+
+    public String getFullName() {
+        return FullName;
     }
 }
