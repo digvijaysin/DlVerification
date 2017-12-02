@@ -10,8 +10,12 @@ import retrofit2.http.Query;
 
 public interface RetrofitInterface {
     @GET("questions")
-    public Call<BlogDetailsModalClass> getDLList(@Query("dlnumber") String s);
+    public Call<BlogDetailsModalClass> getDLList(@Query("dl_number") String s);
+
     @GET("questions")
-    public Call<RcDataClass> getRcList(@Query("rcnumber") String  s);
+    public Call<RcDataClass> getRcList(@Query("rc_number") String  s);
+
+    @GET("questions")
+    public Call<BlogDetailsModalClass> getPoliceIdList(@Query("police_id") String  s);
 }
 

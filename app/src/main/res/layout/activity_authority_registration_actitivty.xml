@@ -79,6 +79,7 @@
                 android:id="@+id/submit"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
+                android:onClick="onSubmit"
                 android:background="@drawable/edit_text_design"
                 android:layout_gravity="center"/>
 
