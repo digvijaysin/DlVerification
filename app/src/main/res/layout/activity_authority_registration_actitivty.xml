@@ -1,9 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shivanshu.driveeasy.AuthorityRegistrationActivity">
+    tools:context="com.example.shivanshu.driveeasy.AuthorityRegistrationActivity" android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/download">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/background"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+    <android.support.v7.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#f9f7f5"
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        >
+        <LinearLayout
+            android:paddingBottom="20dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="fill_parent"
+                android:textColor="#1ebe50"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="Please Validate with us your Identity"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Unique Police Id"
+                android:textColor="#000000"
+                />
+            <EditText
+                android:id="@+id/police_id_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/selected_box"
+                android:hint="Type Your Valid Police Id"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Aadhaar number"
+                android:textColor="#000000"
+                />
+            <EditText
+                android:id="@+id/aadhar_numbmer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="12"
+                android:padding="10dp"
+                android:background="@drawable/selected_box"
+                android:inputType="number"
+                android:hint="12 Digit Valid Number"
+                />
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="15dp"
+                android:id="@+id/submit"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/edit_text_design"
+                android:layout_gravity="center"/>
 
-</android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:id="@+id/_progress_war"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/download">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:progressDrawable="@drawable/edit_text_design" />
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Wait... we are validating You!"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
