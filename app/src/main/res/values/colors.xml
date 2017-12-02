@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
     <color name="colorPrimary">#b6330b</color>
     <color name="colorPrimaryDark">#7b2407</color>
     <color name="colorAccent">#efde40</color>
-=======
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
     <!--<color name="color_primary">#e69138</color>-->
     <!--<color name="color_primary_dark">#1093BF</color>-->
     <!--<color name="colorPrimary">#e69138</color>-->
     <!--<color name="colorPrimaryDark">#1093BF</color>-->
 
->>>>>>> c7df7534ca846e5ba6b796565e85d7888bd1a0e4
 </resources>
