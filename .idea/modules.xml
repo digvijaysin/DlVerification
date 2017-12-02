@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DlVerification.iml" filepath="$PROJECT_DIR$/DlVerification.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DriveEasy.iml" filepath="$PROJECT_DIR$/DriveEasy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../Harshit/AndroidStudioProjects/MYOwnCreations/hackathon/DlVerification/DriveEasy.iml" filepath="$PROJECT_DIR$/../../../../Harshit/AndroidStudioProjects/MYOwnCreations/hackathon/DlVerification/DriveEasy.iml" />
+      <module fileurl="file://C:\Users\Harshit\AndroidStudioProjects\MYOwnCreations\hackathon\DlVerification\DriveEasy.iml" filepath="C:\Users\Harshit\AndroidStudioProjects\MYOwnCreations\hackathon\DlVerification\DriveEasy.iml" />
+      <module fileurl="file://C:\Users\Harshit\Harshit\AndroidStudioProjects\MYOwnCreations\hackathon\DlVerification\DriveEasy.iml" filepath="C:\Users\Harshit\Harshit\AndroidStudioProjects\MYOwnCreations\hackathon\DlVerification\DriveEasy.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

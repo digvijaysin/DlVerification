@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -121,7 +124,7 @@ android:id="@+id/submit"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:textColor="#ffffff"
-            android:text="Please Wait... we are validating You!"
+            android:text="Please wait while we validate you"
             android:gravity="center"/>
 
 
@@ -138,3 +141,4 @@ android:id="@+id/submit"
     android:textColor="#ffffff"
     android:text=" By Rajasthan Government"/>
 </LinearLayout>
+</ScrollView>
