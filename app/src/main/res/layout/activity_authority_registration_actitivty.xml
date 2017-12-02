@@ -87,7 +87,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
     <LinearLayout
-        android:id="@+id/_progress_war"
+        android:id="@+id/progress_war"
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
