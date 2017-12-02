@@ -58,7 +58,7 @@ ProgressBar =(LinearLayout)findViewById(R.id._progress_war);
                 finalSubmissionForm.setIssueDate(dlDetails.getDateOfissue());
                 finalSubmissionForm.setValidity(dlDetails.getExpiryDate());
 
-                Call<RcDataClass> fetchWordListCall= RetrofitObject.getRetrofitObject("http://private-a2403-verification.apiary-mock.com/").getRcList(RcNumber.getText().toString());
+                Call<RcDataClass> fetchWordListCall= RetrofitObject.getRetrofitObject("http://private-c8cb7b-rcverification.apiary-mock.com/").getRcList(RcNumber.getText().toString());
                  fetchWordListCall.enqueue(new Callback<RcDataClass>() {
                      @Override
                      public void onResponse(Call<RcDataClass> call, Response<RcDataClass> response) {
