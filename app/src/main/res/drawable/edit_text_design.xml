@@ -5,11 +5,11 @@
     <size
         android:height="15dp"></size>
     <solid
-        android:color="#112899"></solid>
+        android:color="#c76733"></solid>
     <corners
         android:radius="10dp"></corners>
     <stroke
-        android:color="#6b6a6a"
-        android:width="2dp"></stroke>
+        android:color="#841b03"
+        android:width="3dp"></stroke>
 
 </shape>

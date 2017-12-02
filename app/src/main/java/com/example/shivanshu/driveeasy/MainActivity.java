@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import retrofit2.Call;
@@ -20,7 +19,7 @@ import retrofit2.http.POST;
 
 public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
 EditText AadharNumber,DlNumber,RcNumber;
-    RelativeLayout ProgressBar;
+    LinearLayout ProgressBar;
     CardView cardView;
     TextView Progress;
     Button submit;
@@ -34,7 +33,7 @@ EditText AadharNumber,DlNumber,RcNumber;
         submit=(Button)findViewById(R.id.submit);
         cardView=(CardView)findViewById(R.id.card_view);
         Progress=(TextView)findViewById(R.id.progress_text);
-ProgressBar =(RelativeLayout)findViewById(R.id._progress_war);
+ProgressBar =(LinearLayout)findViewById(R.id._progress_war);
         submit.setOnClickListener(this);
     }
 
@@ -42,6 +41,7 @@ ProgressBar =(RelativeLayout)findViewById(R.id._progress_war);
 
     @Override
     public void onClick(View v) {
+        cardView.setVisibility(View.GONE);
         ProgressBar.setVisibility(View.VISIBLE);
         Call<BlogDetailsModalClass> fetchWordListCall= RetrofitObject.getRetrofitObject("http://private-a2403-dlverification.apiary-mock.com/").getDLList(DlNumber.getText().toString());
         fetchWordListCall.enqueue(new Callback<BlogDetailsModalClass>() {
@@ -70,6 +70,7 @@ ProgressBar =(RelativeLayout)findViewById(R.id._progress_war);
                          finalSubmissionForm.setModelNo(details.getVehicleNo());
                          Intent intent =Main2Activity.getintent(getApplicationContext(),finalSubmissionForm);
                          ProgressBar.setVisibility(View.GONE);
+                         cardView.setVisibility(View.VISIBLE);
                          startActivity(intent);
                      }
 
