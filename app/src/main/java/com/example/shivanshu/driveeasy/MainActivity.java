@@ -42,6 +42,7 @@ ProgressBar =(LinearLayout)findViewById(R.id._progress_war);
     @Override
     public void onClick(View v) {
         cardView.setVisibility(View.GONE);
+        Progress.setText("Please wait we are validating you...");
         ProgressBar.setVisibility(View.VISIBLE);
         Call<BlogDetailsModalClass> fetchWordListCall= RetrofitObject.getRetrofitObject("http://private-a2403-dlverification.apiary-mock.com/").getDLList(DlNumber.getText().toString());
         fetchWordListCall.enqueue(new Callback<BlogDetailsModalClass>() {
@@ -57,7 +58,7 @@ ProgressBar =(LinearLayout)findViewById(R.id._progress_war);
                 finalSubmissionForm.setIssueDate(dlDetails.getDateOfissue());
                 finalSubmissionForm.setValidity(dlDetails.getExpiryDate());
 
-                Call<RcDataClass> fetchWordListCall= RetrofitObject.getRetrofitObject("http://private-a2403-dlverification.apiary-mock.com/").getRcList(RcNumber.getText().toString());
+                Call<RcDataClass> fetchWordListCall= RetrofitObject.getRetrofitObject("http://private-a2403-verification.apiary-mock.com/").getRcList(RcNumber.getText().toString());
                  fetchWordListCall.enqueue(new Callback<RcDataClass>() {
                      @Override
                      public void onResponse(Call<RcDataClass> call, Response<RcDataClass> response) {

@@ -10,6 +10,7 @@
     android:background="@drawable/download"
     tools:context="com.example.shivanshu.driveeasy.MainActivity">
 <ImageView
+    android:layout_marginTop="5dp"
     android:layout_width="fill_parent"
     android:layout_height="100dp"
     android:background="@drawable/background"
@@ -117,10 +118,22 @@ android:id="@+id/submit"
             android:id="@+id/progress_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
             android:text="Please Wait... we are validating You!"
             android:gravity="center"/>
 
 
     </LinearLayout>
 
+<TextView
+    android:layout_gravity="bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+
+    android:textSize="20sp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:text=" By Rajasthan Government"/>
 </LinearLayout>
