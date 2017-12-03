@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shivanshu.driveeasy.Main3Activity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/download">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/background"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+        <android.support.v7.widget.CardView
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#f9f7f5"
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            >
+            <LinearLayout
+                android:paddingBottom="20dp"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="fill_parent"
+                    android:textColor="#1ebe50"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Verification Portal"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="fill_parent"
+                    android:textColor="#1ebe50"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Aadhaar Number"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="All documents of this person is complete and the person is eligible to drive his/her vehicle"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:id="@+id/progress_war"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/download">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:progressDrawable="@drawable/edit_text_design" />
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Please wait while we validate you"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

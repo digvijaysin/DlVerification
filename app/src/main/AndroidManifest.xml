@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -21,7 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".FirstActivity" />
-        <activity android:name=".AuthorityRegistrationActivity"></activity>
+        <activity android:name=".AuthorityRegistrationActivity" />
+        <activity android:name=".PoliceAuthVerification" />
+        <activity android:name=".Main3Activity"></activity>
     </application>
 
 </manifest>
